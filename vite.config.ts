@@ -8,6 +8,10 @@ export default defineConfig({
     host: true,
     open: true
   },
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  },
   define: {
     // Suppression de la définition incorrecte de process.env
     // Vite utilise import.meta.env au lieu de process.env
